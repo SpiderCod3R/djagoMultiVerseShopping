@@ -1,0 +1,11 @@
+__PyCache__
+
+*.*-
+
+*.pyc
+
+.idea
+
+media/
+
+htmocov/
