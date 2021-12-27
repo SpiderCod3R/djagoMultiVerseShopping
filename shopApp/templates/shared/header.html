@@ -1,19 +1,41 @@
 {% load static %}
 <header class="section-header">
     <nav class="navbar p-md-0 navbar-expand-sm navbar-light border-bottom">
-        <div class="container">
+        <ul class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTop4">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">   English </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link"> USD </a>
-                    </li>
+            <ul class="collapse navbar-collapse" id="navbarTop4">
+                <ul class="navbar-nav mr-auto ">
+                  <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Languages
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <button class="dropdown-item" type="button">English</button>
+                          <button class="dropdown-item" type="button">Portuguese</button>
+                      </div>
+                  </div>
+                  <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Prices
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                        <button class="dropdown-item" type="button">USD</button>
+                        <button class="dropdown-item" type="button">REAL</button>
+                      </div>
+                  </div>
                 </ul>
+
+
+<!--                <ul class="navbar-nav mr-auto">-->
+<!--                    <li class="nav-item dropdown">-->
+<!--                        <a href="#" class="nav-link">   English </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item dropdown">-->
+<!--                        <a href="#" class="nav-link"> USD </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
                 <ul class="navbar-nav">
                     <li><a href="#" class="nav-link"> <i class="fa fa-envelope"></i> Email </a></li>
                     <li><a href="#" class="nav-link"> <i class="fa fa-phone"></i> Call us </a></li>
