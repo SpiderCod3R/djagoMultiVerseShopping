@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'shopApp',
-
+    #
     'compressor',
 ]
 
@@ -137,15 +137,15 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATICFILES_DIRS = [
-    'shopApp/static',
-]
-
+# STATICFILES_DIRS = [
+#     'shopApp/static',
+# ]
+#
 STATICFILES_FINDERS = [
     'compressor.finders.CompressorFinder',
 ]
-
-# USADO PARA COMPILAR ARQUIVOS SCSS OU SASS
+#
+# # USADO PARA COMPILAR ARQUIVOS SCSS OU SASS
 COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'django_libsass.SassCompiler'),
 )

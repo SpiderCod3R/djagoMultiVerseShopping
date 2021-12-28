@@ -1,0 +1,43 @@
+.header-main {
+    background-color: #1c1717f7 !important;
+}
+
+.widget-header {
+    vertical-align: text-top !important;
+
+    .icon:hover {
+        color: #eb640b !important;
+
+        &.border:hover {
+            border: 2px solid #eb640b !important;
+        }
+    }
+
+    .icon-sm:hover {
+        color: #eb640b !important;
+
+        &.border:hover {
+            border: 2px solid #eb640b !important;
+        }
+    }
+
+    .icontext .text {
+        width: 100%;
+        color: #eb640b !important;
+        font-weight: bolder;
+    }
+
+}
+
+.brand-wrap .logo, .navbar-brand .logo {
+    max-height: 70px !important;
+}
+
+#myAccount{
+    font-size: small !important;
+    &:hover {
+        color: #dadada !important;
+    }
+
+}
+

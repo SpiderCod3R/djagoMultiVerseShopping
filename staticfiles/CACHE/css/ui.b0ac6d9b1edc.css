@@ -1,0 +1,1597 @@
+/* ==== BASE STYLES ====*/
+/* ==================== GLOBAL STYLES ======================= */
+@import url("https://rsms.me/inter/inter.css");
+/* line 8, staticfiles/sass/ui.scss */
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px; }
+
+/* ========================
+INCLUDE STYLES AND COMPONENTS
+===================== */
+/* ================== HELPERS  =================== */
+/* line 2, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+a:hover {
+  text-decoration: none; }
+
+/* line 5, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.img-wrap {
+  text-align: center;
+  display: block; }
+  /* line 6, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+  .img-wrap img {
+    max-width: 100%; }
+
+/* line 9, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.icon-wrap {
+  text-align: center;
+  display: inline-block; }
+
+/* line 11, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.price-wrap {
+  letter-spacing: -0.7px; }
+
+/* line 13, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.content-body {
+  flex: 1 1 auto;
+  padding: 30px; }
+
+/* =================  DEFINED VARIABLES =================== */
+/* line 17, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.icon-xs, .icon-sm, .icon-md, .icon-lg {
+  display: inline-block;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 0; }
+
+/* line 18, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.icon-xs {
+  width: 32px;
+  height: 32px;
+  line-height: 32px !important;
+  font-size: 16px; }
+
+/* line 19, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.icon-sm {
+  width: 48px;
+  height: 48px;
+  line-height: 48px !important;
+  font-size: 20px; }
+
+/* line 20, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.icon-md {
+  width: 60px;
+  height: 60px;
+  line-height: 60px !important;
+  font-size: 28px; }
+
+/* line 21, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.icon-lg {
+  width: 96px;
+  height: 96px;
+  line-height: 96px !important;
+  font-size: 42px; }
+
+/* line 24, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.img-xs, .img-sm, .img-md, .img-lg {
+  object-fit: cover;
+  flex-shrink: 0;
+  flex-grow: 0; }
+
+/* line 25, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.img-xs {
+  width: 40px;
+  height: 40px; }
+
+/* line 26, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.img-sm {
+  width: 80px;
+  height: 80px; }
+
+/* line 27, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.img-md {
+  width: 140px;
+  height: 140px; }
+
+/* line 28, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.img-lg {
+  width: 250px;
+  height: 250px; }
+
+/* line 30, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.icon-flag-sm {
+  width: 28px;
+  margin-right: 10px; }
+
+/* line 32, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.center-xy {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%); }
+
+/* line 33, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.center-y {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%); }
+
+/* line 34, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.center-x {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%); }
+
+/* line 36, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.vh-100 {
+  height: 100vh; }
+
+/* line 38, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.overflow-h {
+  overflow: hidden; }
+
+/* line 39, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.flip-h {
+  transform: scaleX(-1); }
+
+/* line 41, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.opacity {
+  opacity: .5; }
+
+/* line 43, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+[class*="hover-"] {
+  transition: .5s; }
+
+/* line 45, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.hover-bg:hover {
+  background: #ff6a00;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #ff6a00, #ff6a00);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #ff6a00, #ff6a00);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #ff6a00, #ff6a00);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #ff6a00, #ff6a00);
+  /* Standard syntax */
+  transition: .5s; }
+
+/* line 46, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.hover-zoom:hover {
+  transition: .5s;
+  transform: scaleX(1); }
+
+/* line 55, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.bordered-cols > [class*="col-"] {
+  overflow: hidden;
+  border-color: #e5e7ea;
+  border-width: 1px 0 0 1px;
+  border-style: solid; }
+
+/* ============== spacing ============== */
+/* line 66, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.padding-y {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+/* line 67, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.padding-top {
+  padding-top: 30px; }
+
+/* line 68, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.padding-bottom {
+  padding-bottom: 30px; }
+
+/* line 70, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.padding-y-lg {
+  padding-top: 48px;
+  padding-bottom: 48px; }
+
+/* line 71, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.padding-top-lg {
+  padding-top: 48px; }
+
+/* line 72, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.padding-bottom-lg {
+  padding-bottom: 48px; }
+
+/* line 74, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.padding-y-sm {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+/* line 75, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.padding-top-sm {
+  padding-top: 10px; }
+
+/* line 76, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.padding-bottom-sm {
+  padding-bottom: 10px; }
+
+/* line 80, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.relative {
+  position: relative; }
+
+/* line 81, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.absolute {
+  position: absolute; }
+
+/* line 83, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+var {
+  font-style: normal; }
+
+/* line 84, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+figure {
+  margin-bottom: 0; }
+
+/* line 88, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.form-noborder input, .form-noborder select, .form-noborder .btn {
+  border: 0; }
+
+/* line 89, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.form-noborder select.form-control-lg:not([size]):not([multiple]) {
+  height: 2.875rem; }
+
+/* all clearfix */
+/* line 93, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+article:after,
+.form-group:after {
+  display: block;
+  clear: both;
+  content: ""; }
+
+/* -------------------- small grid gutter --------------------- */
+/* line 102, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.row-sm {
+  margin-right: -5px;
+  margin-left: -5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/* line 109, staticfiles/sass/ui-assets/helpers/_helper-classes.scss */
+.row-sm > [class^="col"] {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+/* line 4, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg {
+  background-color: #f6f7f9; }
+
+/* line 5, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-white {
+  background-color: #fff; }
+
+/* line 6, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-orange {
+  background-color: #ff6a00; }
+
+/* line 7, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-green {
+  background-color: #00b517; }
+
+/* line 8, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-blue {
+  background-color: #12225b; }
+
+/* line 9, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-red {
+  background-color: #fa3434; }
+
+/* line 11, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-light-orange {
+  background-color: #ffdcb0; }
+
+/* line 12, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-light-green {
+  background-color: #abeae8; }
+
+/* line 13, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-light-blue {
+  background-color: #9fe0ff; }
+
+/* line 14, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-light-red {
+  background-color: #fbd5e7; }
+
+/* line 17, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-gradient-blue {
+  background: rgba(33, 37, 41, 0.4);
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, rgba(18, 34, 91, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, rgba(18, 34, 91, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, rgba(18, 34, 91, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(18, 34, 91, 0.65), rgba(33, 37, 41, 0.4));
+  /* Standard syntax */
+  transition: .5s; }
+
+/* line 20, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-gradient-green {
+  background: rgba(33, 37, 41, 0.4);
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, rgba(0, 181, 23, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, rgba(0, 181, 23, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, rgba(0, 181, 23, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(0, 181, 23, 0.65), rgba(33, 37, 41, 0.4));
+  /* Standard syntax */
+  transition: .5s; }
+
+/* line 23, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-gradient-orange {
+  background: rgba(33, 37, 41, 0.4);
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, rgba(255, 106, 0, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, rgba(255, 106, 0, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, rgba(255, 106, 0, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(255, 106, 0, 0.65), rgba(33, 37, 41, 0.4));
+  /* Standard syntax */
+  transition: .5s; }
+
+/* line 26, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-gradient-red {
+  background: rgba(33, 37, 41, 0.4);
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, rgba(250, 52, 52, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, rgba(250, 52, 52, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, rgba(250, 52, 52, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(250, 52, 52, 0.65), rgba(33, 37, 41, 0.4));
+  /* Standard syntax */
+  transition: .5s; }
+
+/* line 29, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-gradient-pink {
+  background: rgba(33, 37, 41, 0.4);
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, rgba(232, 62, 140, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, rgba(232, 62, 140, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, rgba(232, 62, 140, 0.65), rgba(33, 37, 41, 0.4));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(232, 62, 140, 0.65), rgba(33, 37, 41, 0.4));
+  /* Standard syntax */
+  transition: .5s; }
+
+/* line 33, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-pattern {
+  background-image: url(/static/images/banners/bg-pattern.svg), linear-gradient(135deg, #ff6a00, #12225b);
+  background-size: cover, auto;
+  background-repeat: no-repeat, repeat;
+  background-position: 0px 0px, 50% 50%; }
+
+/* line 40, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.bg-img {
+  overflow: hidden;
+  background-color: #ddd;
+  background-image: linear-gradient(135deg, rgba(255, 106, 0, 0.8), rgba(18, 34, 91, 0.9)), url("/static/images/banners/bg-cpu.jpg");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto  cover; }
+
+/* line 47, staticfiles/sass/ui-assets/helpers/_bg.scss */
+.overlay-gradient {
+  position: relative; }
+  /* line 48, staticfiles/sass/ui-assets/helpers/_bg.scss */
+  .overlay-gradient:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .6;
+    transition: .5s;
+    background: #12225b;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #ff6a00, #12225b);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #ff6a00, #12225b);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #ff6a00, #12225b);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #ff6a00, #12225b);
+    /* Standard syntax */ }
+  /* line 52, staticfiles/sass/ui-assets/helpers/_bg.scss */
+  .overlay-gradient:hover:before {
+    opacity: .9; }
+
+/* --------------------- titles ---------------------- */
+/* line 2, staticfiles/sass/ui-assets/helpers/_typography.scss */
+.section-heading {
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+/* line 3, staticfiles/sass/ui-assets/helpers/_typography.scss */
+.section-title {
+  color: #212529; }
+
+/* line 5, staticfiles/sass/ui-assets/helpers/_typography.scss */
+.title-text {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #212529; }
+
+/* line 6, staticfiles/sass/ui-assets/helpers/_typography.scss */
+.title-page {
+  color: #212529; }
+
+/* line 10, staticfiles/sass/ui-assets/helpers/_typography.scss */
+.b {
+  font-weight: 600; }
+
+/* line 12, staticfiles/sass/ui-assets/helpers/_typography.scss */
+.white {
+  color: #fff; }
+
+/* line 13, staticfiles/sass/ui-assets/helpers/_typography.scss */
+.dark {
+  color: #212529; }
+
+/* line 14, staticfiles/sass/ui-assets/helpers/_typography.scss */
+.black {
+  color: #000; }
+
+/* line 16, staticfiles/sass/ui-assets/helpers/_typography.scss */
+p:last-child {
+  margin-bottom: 0; }
+
+/* ==================  title element ================ */
+/* line 19, staticfiles/sass/ui-assets/helpers/_typography.scss */
+.heading-line {
+  position: relative; }
+  /* line 20, staticfiles/sass/ui-assets/helpers/_typography.scss */
+  .heading-line .title-section {
+    position: relative;
+    display: inline-block;
+    padding-right: 15px;
+    background-color: #f6f7f9;
+    z-index: 2; }
+
+/* line 28, staticfiles/sass/ui-assets/helpers/_typography.scss */
+.heading-line::before {
+  top: 35%;
+  border-radius: 7px;
+  border-top-style: solid;
+  content: "";
+  position: absolute;
+  left: auto;
+  right: 0;
+  width: 100%;
+  height: 0;
+  border: 3px solid #dcdee3;
+  overflow: hidden; }
+
+/* ==================  title helpers ================ */
+/* line 43, staticfiles/sass/ui-assets/helpers/_typography.scss */
+.rtl {
+  direction: rtl; }
+
+/* line 44, staticfiles/sass/ui-assets/helpers/_typography.scss */
+.ltr {
+  direction: ltr; }
+
+/* ================== SECTIONS =================== */
+/* line 1, staticfiles/sass/ui-assets/sections/_header.scss */
+.section-header {
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(51, 51, 51, 0.15); }
+
+/* ================== header main ==================  */
+/* line 7, staticfiles/sass/ui-assets/sections/_header.scss */
+.header-top-light .nav-link {
+  color: #969696; }
+  /* line 8, staticfiles/sass/ui-assets/sections/_header.scss */
+  .header-top-light .nav-link:hover {
+    color: #212529; }
+
+/* line 12, staticfiles/sass/ui-assets/sections/_header.scss */
+.header-main {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+/* line 15, staticfiles/sass/ui-assets/sections/_header.scss */
+.brand-wrap .logo, .navbar-brand .logo {
+  margin-right: 7px;
+  max-height: 34px;
+  display: inline-block; }
+
+/* line 20, staticfiles/sass/ui-assets/sections/_header.scss */
+.navbar-main .nav-link:hover {
+  color: #ff6a00; }
+
+/* line 25, staticfiles/sass/ui-assets/sections/_header.scss */
+.search-header {
+  border: 2px solid #ff6a00;
+  border-radius: 0.55rem; }
+  /* line 27, staticfiles/sass/ui-assets/sections/_header.scss */
+  .search-header .form-control, .search-header .custom-select {
+    border-color: transparent; }
+  /* line 28, staticfiles/sass/ui-assets/sections/_header.scss */
+  .search-header select {
+    flex-basis: 150px !important;
+    flex-grow: 0 !important; }
+
+/* line 34, staticfiles/sass/ui-assets/sections/_header.scss */
+.widget-header {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+  /* line 36, staticfiles/sass/ui-assets/sections/_header.scss */
+  .widget-header .widget-view {
+    padding: 5px 7px;
+    display: inline-block;
+    position: relative;
+    text-align: center; }
+  /* line 37, staticfiles/sass/ui-assets/sections/_header.scss */
+  .widget-header .icon-area {
+    font-size: 24px;
+    display: inline-block;
+    width: 36px;
+    height: 30px;
+    color: #969696; }
+    /* line 38, staticfiles/sass/ui-assets/sections/_header.scss */
+    .widget-header .icon-area .notify {
+      position: absolute;
+      top: 0px;
+      right: 8%; }
+  /* line 40, staticfiles/sass/ui-assets/sections/_header.scss */
+  .widget-header .icon {
+    color: #969696; }
+    /* line 41, staticfiles/sass/ui-assets/sections/_header.scss */
+    .widget-header .icon .notify {
+      position: absolute;
+      top: 0;
+      right: 0; }
+  /* line 43, staticfiles/sass/ui-assets/sections/_header.scss */
+  .widget-header .text {
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    line-height: 1.2; }
+  /* line 48, staticfiles/sass/ui-assets/sections/_header.scss */
+  .widget-header a {
+    color: #212529; }
+  /* line 50, staticfiles/sass/ui-assets/sections/_header.scss */
+  .widget-header form {
+    min-width: 280px; }
+  /* line 53, staticfiles/sass/ui-assets/sections/_header.scss */
+  .widget-header:hover i {
+    color: #212529; }
+
+/* desktop only */
+/* desktop only .end */
+/* ================ SECTION-FOOTER ==================  */
+/* line 6, staticfiles/sass/ui-assets/sections/_footer.scss */
+.section-footer ul li {
+  margin-bottom: 5px; }
+
+/* line 8, staticfiles/sass/ui-assets/sections/_footer.scss */
+.section-footer ul a {
+  color: inherit; }
+  /* line 10, staticfiles/sass/ui-assets/sections/_footer.scss */
+  .section-footer ul a:hover {
+    color: #ff6a00; }
+
+/* line 15, staticfiles/sass/ui-assets/sections/_footer.scss */
+.section-footer .logo-footer {
+  height: 40px; }
+
+/* line 16, staticfiles/sass/ui-assets/sections/_footer.scss */
+.section-footer .title {
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 18px; }
+
+/* line 21, staticfiles/sass/ui-assets/sections/_footer.scss */
+.footer-bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #1a3286; }
+
+/* line 24, staticfiles/sass/ui-assets/sections/_footer.scss */
+.footer-copyright {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+/* ================== COMPONENTS =================== */
+/* line 2, staticfiles/sass/ui-assets/components/_buttons.scss */
+.btn-facebook {
+  background-color: #405D9D;
+  color: #fff; }
+  /* line 2, staticfiles/sass/ui-assets/components/_buttons.scss */
+  .btn-facebook:hover {
+    color: #fff; }
+
+/* line 3, staticfiles/sass/ui-assets/components/_buttons.scss */
+.btn-instagram {
+  background-color: #E52D27;
+  color: #fff; }
+  /* line 3, staticfiles/sass/ui-assets/components/_buttons.scss */
+  .btn-instagram:hover {
+    color: #fff; }
+
+/* line 4, staticfiles/sass/ui-assets/components/_buttons.scss */
+.btn-youtube {
+  background-color: #C8046C;
+  color: #fff; }
+  /* line 4, staticfiles/sass/ui-assets/components/_buttons.scss */
+  .btn-youtube:hover {
+    color: #fff; }
+
+/* line 5, staticfiles/sass/ui-assets/components/_buttons.scss */
+.btn-twitter {
+  background-color: #42AEEC;
+  color: #fff; }
+  /* line 5, staticfiles/sass/ui-assets/components/_buttons.scss */
+  .btn-twitter:hover {
+    color: #fff; }
+
+/* line 6, staticfiles/sass/ui-assets/components/_buttons.scss */
+.btn-google {
+  background-color: #af0000;
+  color: #fff; }
+  /* line 6, staticfiles/sass/ui-assets/components/_buttons.scss */
+  .btn-google:hover {
+    color: #fff; }
+
+/* line 8, staticfiles/sass/ui-assets/components/_buttons.scss */
+.btn-icon {
+  width: calc(1.5em + 0.9rem + 2px);
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0; }
+  /* line 10, staticfiles/sass/ui-assets/components/_buttons.scss */
+  .btn-icon i {
+    line-height: 1; }
+
+/* line 13, staticfiles/sass/ui-assets/components/_buttons.scss */
+.btn-light {
+  background-color: #fff;
+  border-color: #e5e7ea; }
+  /* line 14, staticfiles/sass/ui-assets/components/_buttons.scss */
+  .btn-light i {
+    color: #969696; }
+  /* line 15, staticfiles/sass/ui-assets/components/_buttons.scss */
+  .btn-light:hover {
+    background-color: #fff;
+    border-color: #9099a6; }
+
+/* line 18, staticfiles/sass/ui-assets/components/_buttons.scss */
+.btn-light.active i {
+  color: #ff6a00; }
+
+/* line 21, staticfiles/sass/ui-assets/components/_buttons.scss */
+.btn .text + i {
+  margin-left: 10px; }
+
+/* line 22, staticfiles/sass/ui-assets/components/_buttons.scss */
+.btn i + .text {
+  margin-left: 10px; }
+
+/* line 4, staticfiles/sass/ui-assets/components/_items.scss */
+.itemside {
+  position: relative;
+  display: flex;
+  width: 100%; }
+  /* line 6, staticfiles/sass/ui-assets/components/_items.scss */
+  .itemside .aside {
+    position: relative;
+    flex-shrink: 0; }
+  /* line 7, staticfiles/sass/ui-assets/components/_items.scss */
+  .itemside .info {
+    padding-left: 15px;
+    padding-right: 7px; }
+  /* line 9, staticfiles/sass/ui-assets/components/_items.scss */
+  .itemside p {
+    margin-bottom: 0; }
+  /* line 10, staticfiles/sass/ui-assets/components/_items.scss */
+  .itemside .title {
+    display: block;
+    margin-bottom: 5px;
+    color: #212529; }
+  /* line 11, staticfiles/sass/ui-assets/components/_items.scss */
+  .itemside a.title:hover {
+    color: #ff6a00; }
+
+/* line 14, staticfiles/sass/ui-assets/components/_items.scss */
+a.itemside {
+  color: initial; }
+
+/* line 17, staticfiles/sass/ui-assets/components/_items.scss */
+.items-bordered-wrap .itemside:not(:last-child) {
+  border-bottom: 1px solid #e5e7ea;
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+
+/* line 22, staticfiles/sass/ui-assets/components/_items.scss */
+.itemlist {
+  padding: 20px;
+  border-bottom: 1px solid #eee; }
+
+/* line 1, staticfiles/sass/ui-assets/components/_lists.scss */
+.list-inline {
+  margin-bottom: 0; }
+
+/* line 2, staticfiles/sass/ui-assets/components/_lists.scss */
+.list-inline-item {
+  vertical-align: middle; }
+
+/* --------- description list --------*/
+/* line 6, staticfiles/sass/ui-assets/components/_lists.scss */
+dl[class="row"] {
+  margin-bottom: 0; }
+
+/* line 9, staticfiles/sass/ui-assets/components/_lists.scss */
+[class*="dlist-"] {
+  margin-bottom: 5px; }
+  /* line 11, staticfiles/sass/ui-assets/components/_lists.scss */
+  [class*="dlist-"] dd {
+    margin-bottom: 0; }
+
+/* line 15, staticfiles/sass/ui-assets/components/_lists.scss */
+.dlist-inline dt, .dlist-inline dd {
+  display: inline-block; }
+
+/* line 18, staticfiles/sass/ui-assets/components/_lists.scss */
+.dlist-align {
+  display: flex; }
+  /* line 19, staticfiles/sass/ui-assets/components/_lists.scss */
+  .dlist-align dt {
+    width: 120px;
+    word-wrap: break-word;
+    font-weight: normal; }
+  /* line 20, staticfiles/sass/ui-assets/components/_lists.scss */
+  .dlist-align dd {
+    flex-grow: 1; }
+
+/* -------------------- list.row--------------------- */
+/* line 23, staticfiles/sass/ui-assets/components/_lists.scss */
+ul.row, ul.row-sm {
+  list-style: none;
+  padding: 0; }
+
+/* ================= lists ================= */
+/* line 26, staticfiles/sass/ui-assets/components/_lists.scss */
+[class*="list-"] li:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  overflow: hidden;
+  height: 0;
+  clear: both; }
+
+/* line 34, staticfiles/sass/ui-assets/components/_lists.scss */
+.list-icon {
+  list-style: none;
+  padding-left: 0; }
+  /* line 35, staticfiles/sass/ui-assets/components/_lists.scss */
+  .list-icon li {
+    margin-bottom: 7px;
+    position: relative;
+    padding-left: 30px; }
+  /* line 36, staticfiles/sass/ui-assets/components/_lists.scss */
+  .list-icon .icon {
+    width: 22px;
+    margin-right: 15px;
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    top: 3px;
+    left: 0; }
+  /* line 39, staticfiles/sass/ui-assets/components/_lists.scss */
+  .list-icon span {
+    vertical-align: middle; }
+
+/* line 42, staticfiles/sass/ui-assets/components/_lists.scss */
+.list-bullet {
+  list-style: none;
+  padding-left: 0; }
+
+/* line 43, staticfiles/sass/ui-assets/components/_lists.scss */
+.list-bullet li {
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 15px; }
+
+/* line 44, staticfiles/sass/ui-assets/components/_lists.scss */
+.list-bullet li::before {
+  content: " ";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 7px;
+  border-radius: 100%;
+  height: 7px;
+  background: #ced4da; }
+
+/* line 53, staticfiles/sass/ui-assets/components/_lists.scss */
+.list-check {
+  padding-left: 0;
+  list-style: none; }
+  /* line 54, staticfiles/sass/ui-assets/components/_lists.scss */
+  .list-check > li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 7px; }
+  /* line 55, staticfiles/sass/ui-assets/components/_lists.scss */
+  .list-check > li::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 13px;
+    color: #00b517;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    content: "\f00c"; }
+
+/* line 64, staticfiles/sass/ui-assets/components/_lists.scss */
+.list-normal {
+  list-style: none;
+  padding-left: 0; }
+  /* line 65, staticfiles/sass/ui-assets/components/_lists.scss */
+  .list-normal li {
+    padding-left: 1em;
+    margin-bottom: 7px; }
+  /* line 66, staticfiles/sass/ui-assets/components/_lists.scss */
+  .list-normal li:before {
+    content: "\2022";
+    color: #ff6a00;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; }
+
+/* line 72, staticfiles/sass/ui-assets/components/_lists.scss */
+.list-menu {
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+  /* line 73, staticfiles/sass/ui-assets/components/_lists.scss */
+  .list-menu li {
+    margin-bottom: 5px; }
+  /* line 74, staticfiles/sass/ui-assets/components/_lists.scss */
+  .list-menu a {
+    color: #212529; }
+    /* line 75, staticfiles/sass/ui-assets/components/_lists.scss */
+    .list-menu a:hover {
+      color: #ff6a00; }
+
+/* line 79, staticfiles/sass/ui-assets/components/_lists.scss */
+.cols-two {
+  column-count: 2; }
+
+/* line 83, staticfiles/sass/ui-assets/components/_lists.scss */
+.cols-three {
+  column-count: 3; }
+
+/* line 87, staticfiles/sass/ui-assets/components/_lists.scss */
+.cols-four {
+  column-count: 4; }
+
+/* IF CARD IS LINKED */
+/* line 2, staticfiles/sass/ui-assets/components/_cards-item.scss */
+a[class*='card'] {
+  color: initial; }
+  /* line 5, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  a[class*='card']:hover .title {
+    color: #ff6a00; }
+
+/* BASE STYLE FOR PRODUCT ITEM */
+/* line 13, staticfiles/sass/ui-assets/components/_cards-item.scss */
+[class*='card-product'] a.title {
+  color: #212529;
+  display: block; }
+  /* line 14, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  [class*='card-product'] a.title:hover {
+    color: #ff6a00; }
+
+/* line 17, staticfiles/sass/ui-assets/components/_cards-item.scss */
+[class*='card-product'] .img-wrap .badge {
+  top: 10px;
+  left: 10px;
+  position: absolute; }
+
+/* line 19, staticfiles/sass/ui-assets/components/_cards-item.scss */
+[class*='card-product'] p {
+  margin-bottom: 0; }
+
+/* line 20, staticfiles/sass/ui-assets/components/_cards-item.scss */
+[class*='card-product'] .img-wrap {
+  overflow: hidden;
+  position: relative; }
+  /* line 22, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  [class*='card-product'] .img-wrap img {
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+    display: inline-block;
+    object-fit: cover; }
+
+/* GRID STYLE PRODUCT ITEM */
+/* line 27, staticfiles/sass/ui-assets/components/_cards-item.scss */
+.card-product-grid {
+  margin-bottom: 20px; }
+  /* line 28, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-product-grid .img-wrap {
+    height: 250px; }
+  /* line 30, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-product-grid .info-wrap {
+    overflow: hidden;
+    padding: 16px; }
+  /* line 31, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-product-grid .bottom-wrap {
+    padding: 16px;
+    border-top: 1px solid #e5e7ea; }
+  /* line 33, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-product-grid .topbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    left: 0;
+    text-align: initial;
+    padding: 10px 15px; }
+    /* line 36, staticfiles/sass/ui-assets/components/_cards-item.scss */
+    .card-product-grid .topbar a {
+      color: #ccc; }
+      /* line 37, staticfiles/sass/ui-assets/components/_cards-item.scss */
+      .card-product-grid .topbar a:hover {
+        color: #ff6a00; }
+  /* line 40, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-product-grid .fix-height {
+    height: 80px;
+    overflow: hidden; }
+  /* line 41, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-product-grid .btn-overlay {
+    transition: .5s;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5); }
+  /* line 48, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-product-grid:hover .btn-overlay {
+    opacity: 1; }
+  /* line 49, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-product-grid:hover {
+    box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
+    transition: .3s; }
+
+/* line 52, staticfiles/sass/ui-assets/components/_cards-item.scss */
+.item-slide .card-product-grid {
+  margin-bottom: 0; }
+
+/* LARGE LIST STYLE PRODUCT ITEM */
+/* line 55, staticfiles/sass/ui-assets/components/_cards-item.scss */
+.card-product-list {
+  margin-bottom: 20px; }
+  /* line 56, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-product-list .img-wrap {
+    height: 220px;
+    border-radius: 0.37rem 0 0 0.37rem; }
+  /* line 57, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-product-list .info-main {
+    padding: 1.5rem 1rem; }
+  /* line 58, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-product-list .info-aside {
+    padding: 1.5rem 1rem;
+    border-left: 1px solid #e5e7ea;
+    height: 100%; }
+  /* line 59, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-product-list:hover {
+    box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
+    transition: .3s; }
+
+/* line 63, staticfiles/sass/ui-assets/components/_cards-item.scss */
+.card-sm {
+  min-height: 284px; }
+  /* line 65, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-sm .img-wrap {
+    height: 180px; }
+
+/* line 69, staticfiles/sass/ui-assets/components/_cards-item.scss */
+.card-lg .img-wrap {
+  height: 280px; }
+
+/* line 74, staticfiles/sass/ui-assets/components/_cards-item.scss */
+.card-category {
+  display: block;
+  margin-bottom: 20px;
+  overflow: hidden;
+  min-height: 410px; }
+  /* line 75, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-category .card-title {
+    font-weight: 600;
+    font-size: 18px; }
+  /* line 76, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-category .img-wrap {
+    overflow: hidden;
+    display: inline-block;
+    height: 170px;
+    background: #fff0c5; }
+    /* line 79, staticfiles/sass/ui-assets/components/_cards-item.scss */
+    .card-category .img-wrap img {
+      height: 100%;
+      width: 60%;
+      object-fit: cover;
+      mix-blend-mode: multiply; }
+  /* line 82, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-category .list-menu a:hover {
+    margin-left: 3px;
+    transition: .2s; }
+  /* line 83, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-category:hover {
+    border-color: #ff6a00; }
+
+/* line 88, staticfiles/sass/ui-assets/components/_cards-item.scss */
+.card-banner {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center center; }
+  /* line 90, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-banner .card-body {
+    background-size: cover;
+    position: relative;
+    z-index: 10; }
+  /* line 92, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-banner .caption {
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 10;
+    padding: 1.25rem;
+    color: #fff; }
+  /* line 93, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-banner .caption.bottom {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%; }
+  /* line 94, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-banner .caption.top {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%; }
+  /* line 96, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-banner .caption.left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute; }
+  /* line 98, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-banner .text-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 7px 20px;
+    padding-top: 30px;
+    border-radius: 0 0 0.37rem 0.37rem;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    color: #fff; }
+  /* line 105, staticfiles/sass/ui-assets/components/_cards-item.scss */
+  .card-banner .img-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: multiply;
+    max-width: 100%; }
+
+/* line 112, staticfiles/sass/ui-assets/components/_cards-item.scss */
+.card-banner-lg img {
+  max-height: 320px;
+  object-fit: cover; }
+
+/* line 116, staticfiles/sass/ui-assets/components/_cards-item.scss */
+.card-post .card-img-top {
+  height: 200px;
+  object-fit: cover; }
+
+/* line 2, staticfiles/sass/ui-assets/components/_elements.scss */
+.card .img-wrap {
+  overflow: hidden; }
+
+/* line 5, staticfiles/sass/ui-assets/components/_elements.scss */
+.icontext {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle; }
+  /* line 7, staticfiles/sass/ui-assets/components/_elements.scss */
+  .icontext p {
+    margin-bottom: 0; }
+  /* line 8, staticfiles/sass/ui-assets/components/_elements.scss */
+  .icontext .text {
+    width: 100%;
+    color: #212529; }
+  /* line 9, staticfiles/sass/ui-assets/components/_elements.scss */
+  .icontext .icon {
+    position: relative;
+    margin-right: 10px;
+    flex-shrink: 0;
+    flex-grow: 0; }
+  /* line 10, staticfiles/sass/ui-assets/components/_elements.scss */
+  .icontext .title {
+    display: block;
+    margin-bottom: 0; }
+
+/* line 13, staticfiles/sass/ui-assets/components/_elements.scss */
+.tag {
+  display: inline-block;
+  padding: 3px 7px;
+  background: #f2f2f2;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  margin-top: 4px;
+  margin-right: 2px;
+  font-size: 85%; }
+
+/* line 17, staticfiles/sass/ui-assets/components/_elements.scss */
+.item-logo {
+  margin-bottom: 20px;
+  text-align: center; }
+  /* line 18, staticfiles/sass/ui-assets/components/_elements.scss */
+  .item-logo img {
+    max-height: 65px; }
+
+/* line 23, staticfiles/sass/ui-assets/components/_elements.scss */
+.timer > div {
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px; }
+
+/* line 24, staticfiles/sass/ui-assets/components/_elements.scss */
+.timer .num {
+  padding: 7px 3px;
+  display: block;
+  background-color: #212529;
+  min-width: 44px;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 6px;
+  line-height: 1.2; }
+
+/* line 27, staticfiles/sass/ui-assets/components/_elements.scss */
+.notify {
+  position: absolute;
+  top: -4px;
+  right: -10px;
+  display: inline-block;
+  padding: .25em .6em;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  font-weight: 300;
+  border-radius: 3rem;
+  color: #fff;
+  background-color: #fa3434; }
+
+/* line 37, staticfiles/sass/ui-assets/components/_elements.scss */
+.price {
+  font-weight: 600;
+  color: #212529; }
+
+/* line 38, staticfiles/sass/ui-assets/components/_elements.scss */
+.price-old {
+  color: #969696;
+  margin-left: 5px; }
+
+/* line 40, staticfiles/sass/ui-assets/components/_elements.scss */
+.icon-control {
+  margin-top: 5px;
+  float: right;
+  font-size: 80%; }
+
+/* line 43, staticfiles/sass/ui-assets/components/_elements.scss */
+.card-header .title {
+  margin-bottom: 0;
+  line-height: 1.5; }
+
+/* line 46, staticfiles/sass/ui-assets/components/_elements.scss */
+.filter-group {
+  border-bottom: 1px solid #e5e7ea;
+  margin-top: 10px;
+  padding-bottom: 10px; }
+  /* line 47, staticfiles/sass/ui-assets/components/_elements.scss */
+  .filter-group .title {
+    margin-bottom: 0; }
+  /* line 48, staticfiles/sass/ui-assets/components/_elements.scss */
+  .filter-group:last-child {
+    border-bottom: 0; }
+  /* line 49, staticfiles/sass/ui-assets/components/_elements.scss */
+  .filter-group .inner {
+    padding-top: 16px;
+    padding-bottom: 7px; }
+
+/* ====================== block ==================== */
+/* line 53, staticfiles/sass/ui-assets/components/_elements.scss */
+.box {
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #e5e7ea; }
+  /* line 55, staticfiles/sass/ui-assets/components/_elements.scss */
+  .box img {
+    max-width: 100%; }
+
+/* ================= RATINGS ============== */
+/* line 60, staticfiles/sass/ui-assets/components/_elements.scss */
+.label-rating {
+  margin-left: 7px;
+  display: inline-block;
+  vertical-align: middle; }
+
+/* rating-list */
+/* line 64, staticfiles/sass/ui-assets/components/_elements.scss */
+.rating-stars {
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  white-space: nowrap;
+  clear: both; }
+  /* line 66, staticfiles/sass/ui-assets/components/_elements.scss */
+  .rating-stars img {
+    height: 14px;
+    max-width: none; }
+  /* line 67, staticfiles/sass/ui-assets/components/_elements.scss */
+  .rating-stars i {
+    font-size: 14px;
+    color: #ccc;
+    display: inline; }
+  /* line 68, staticfiles/sass/ui-assets/components/_elements.scss */
+  .rating-stars li {
+    display: block;
+    text-overflow: clip;
+    white-space: nowrap;
+    z-index: 1; }
+  /* line 70, staticfiles/sass/ui-assets/components/_elements.scss */
+  .rating-stars li.stars-active {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; }
+    /* line 71, staticfiles/sass/ui-assets/components/_elements.scss */
+    .rating-stars li.stars-active i {
+      color: orange; }
+
+/* line 1, staticfiles/sass/ui-assets/components/_menu.scss */
+.nav-home-aside {
+  width: 250px; }
+  /* line 3, staticfiles/sass/ui-assets/components/_menu.scss */
+  .nav-home-aside .menu-category {
+    margin: 0;
+    padding: 0; }
+    /* line 4, staticfiles/sass/ui-assets/components/_menu.scss */
+    .nav-home-aside .menu-category li {
+      position: relative;
+      display: block;
+      border-bottom: 1px solid #e5e7ea; }
+    /* line 6, staticfiles/sass/ui-assets/components/_menu.scss */
+    .nav-home-aside .menu-category a {
+      color: #212529; }
+    /* line 7, staticfiles/sass/ui-assets/components/_menu.scss */
+    .nav-home-aside .menu-category > li > a {
+      display: block;
+      padding: 10px 0px; }
+    /* line 9, staticfiles/sass/ui-assets/components/_menu.scss */
+    .nav-home-aside .menu-category .submenu {
+      display: none;
+      margin: 0;
+      padding: 0;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      z-index: 20;
+      position: absolute;
+      left: 100%;
+      top: 0;
+      width: 250px;
+      background: #fff; }
+      /* line 11, staticfiles/sass/ui-assets/components/_menu.scss */
+      .nav-home-aside .menu-category .submenu li {
+        list-style: none; }
+      /* line 13, staticfiles/sass/ui-assets/components/_menu.scss */
+      .nav-home-aside .menu-category .submenu li a {
+        padding: 10px 16px;
+        display: block; }
+    /* line 16, staticfiles/sass/ui-assets/components/_menu.scss */
+    .nav-home-aside .menu-category a:hover {
+      color: #ff6a00;
+      transition: all 0.3s; }
+    /* line 19, staticfiles/sass/ui-assets/components/_menu.scss */
+    .nav-home-aside .menu-category li:hover .submenu {
+      display: block;
+      margin-left: 0px; }
+    /* line 24, staticfiles/sass/ui-assets/components/_menu.scss */
+    .nav-home-aside .menu-category .has-submenu > a:after {
+      content: "\203A";
+      font-size: 24px;
+      color: #999;
+      line-height: 18px;
+      font-weight: bold;
+      float: right; }
+
+/* line 32, staticfiles/sass/ui-assets/components/_menu.scss */
+.dropdown-large {
+  padding: 20px; }
+  /* line 34, staticfiles/sass/ui-assets/components/_menu.scss */
+  .dropdown-large a {
+    display: block;
+    color: #212529;
+    padding: 5px 0; }
+    /* line 35, staticfiles/sass/ui-assets/components/_menu.scss */
+    .dropdown-large a:hover {
+      color: #ff6a00; }
+
+@media all and (min-width: 992px) {
+  /* line 41, staticfiles/sass/ui-assets/components/_menu.scss */
+  .dropdown-large {
+    min-width: 500px; } }
+
+/* line 1, staticfiles/sass/ui-assets/components/_forms.scss */
+.form-inline input[type='number'] {
+  max-width: 100px; }
+
+/* line 5, staticfiles/sass/ui-assets/components/_forms.scss */
+.input-spinner {
+  width: 120px;
+  flex-wrap: nowrap;
+  display: inline-flex; }
+  /* line 6, staticfiles/sass/ui-assets/components/_forms.scss */
+  .input-spinner input.form-control {
+    text-align: center;
+    max-width: 46px;
+    flex-basis: 46px;
+    border-color: #e5e7ea;
+    flex-grow: 0; }
+  /* line 7, staticfiles/sass/ui-assets/components/_forms.scss */
+  .input-spinner .btn {
+    width: 36px;
+    text-align: center; }
+
+/* line 10, staticfiles/sass/ui-assets/components/_forms.scss */
+.checkbox-btn {
+  position: relative; }
+  /* line 11, staticfiles/sass/ui-assets/components/_forms.scss */
+  .checkbox-btn input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0; }
+  /* line 16, staticfiles/sass/ui-assets/components/_forms.scss */
+  .checkbox-btn input:checked ~ .btn {
+    border-color: #ff6a00;
+    background-color: #ff6a00;
+    color: #fff; }
+
+/* line 23, staticfiles/sass/ui-assets/components/_forms.scss */
+.js-check {
+  position: relative; }
+  /* line 25, staticfiles/sass/ui-assets/components/_forms.scss */
+  .js-check .title {
+    margin-left: 20px; }
+  /* line 28, staticfiles/sass/ui-assets/components/_forms.scss */
+  .js-check input {
+    position: absolute;
+    top: 21px;
+    left: 16px; }
+  /* line 33, staticfiles/sass/ui-assets/components/_forms.scss */
+  .js-check.active {
+    border-color: #ff6a00; }
+
+/* line 36, staticfiles/sass/ui-assets/components/_forms.scss */
+.js-check.box {
+  width: 100%;
+  border-width: 3px; }
+
+/* ================== PAGES =================== */
+/* line 2, staticfiles/sass/ui-assets/pages/_page-base.scss */
+body {
+  background-color: #f6f7f9; }
+
+/* ================ PAGES HEADER ================== */
+/* line 7, staticfiles/sass/ui-assets/pages/_page-base.scss */
+.section-pagetop {
+  padding: 45px 0; }
+
+/* line 6, staticfiles/sass/ui-assets/pages/_page-home.scss */
+.slider-home-banner .carousel-item img {
+  width: 100%;
+  height: 375px;
+  object-fit: cover; }
+
+/* line 15, staticfiles/sass/ui-assets/pages/_page-home.scss */
+.special-home-right .card-banner {
+  min-height: 112px; }
+
+/* line 21, staticfiles/sass/ui-assets/pages/_page-home.scss */
+.card-deal {
+  flex-direction: row; }
+  /* line 23, staticfiles/sass/ui-assets/pages/_page-home.scss */
+  .card-deal .col-heading {
+    min-width: 300px;
+    flex-basis: 350px;
+    flex-shrink: 0; }
+  /* line 24, staticfiles/sass/ui-assets/pages/_page-home.scss */
+  .card-deal .row {
+    width: 100%; }
+  /* line 26, staticfiles/sass/ui-assets/pages/_page-home.scss */
+  .card-deal .items-wrap > [class*=col] {
+    border-left: 1px solid #e5e7ea; }
+  /* line 31, staticfiles/sass/ui-assets/pages/_page-home.scss */
+  .card-deal .card-product-grid {
+    margin-bottom: 0;
+    text-align: center; }
+
+/* line 36, staticfiles/sass/ui-assets/pages/_page-home.scss */
+.home-category-banner {
+  position: relative;
+  padding: 30px;
+  height: 100%;
+  overflow: hidden; }
+  /* line 38, staticfiles/sass/ui-assets/pages/_page-home.scss */
+  .home-category-banner .img-bg {
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    mix-blend-mode: multiply;
+    height: 260px; }
+
+/* line 44, staticfiles/sass/ui-assets/helpers/_mixins.scss */
+.card-home-category .item .card-body::after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/* line 51, staticfiles/sass/ui-assets/pages/_page-home.scss */
+.card-home-category .item .title {
+  min-height: 40px;
+  font-weight: 500; }
+
+/* line 55, staticfiles/sass/ui-assets/pages/_page-home.scss */
+.card-home-category .item:hover img {
+  transform: scale(1.3);
+  transition: .5s; }
+
+/* line 59, staticfiles/sass/ui-assets/pages/_page-home.scss */
+.banner-quote {
+  min-height: 350px; }
+
+/* line 61, staticfiles/sass/ui-assets/pages/_page-home.scss */
+.section-subscribe {
+  background-color: #162a70; }
+
+/* ================== PAGE DETAILS ==================  */
+/* line 3, staticfiles/sass/ui-assets/pages/_page-detail.scss */
+.gallery-wrap .img-big-wrap {
+  margin-bottom: 10px;
+  border-radius: 0.37rem;
+  overflow: hidden;
+  background-color: #fff; }
+  /* line 5, staticfiles/sass/ui-assets/pages/_page-detail.scss */
+  .gallery-wrap .img-big-wrap a {
+    text-align: center;
+    display: block; }
+  /* line 6, staticfiles/sass/ui-assets/pages/_page-detail.scss */
+  .gallery-wrap .img-big-wrap img {
+    height: 480px;
+    width: auto;
+    display: inline-block;
+    cursor: zoom-in; }
+
+/* line 8, staticfiles/sass/ui-assets/pages/_page-detail.scss */
+.gallery-wrap .thumbs-wrap {
+  text-align: center;
+  margin-bottom: 20px; }
+  /* line 9, staticfiles/sass/ui-assets/pages/_page-detail.scss */
+  .gallery-wrap .thumbs-wrap .item-thumb {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 3px;
+    display: inline-block;
+    overflow: hidden; }
+    /* line 11, staticfiles/sass/ui-assets/pages/_page-detail.scss */
+    .gallery-wrap .thumbs-wrap .item-thumb:hover {
+      border-color: #ff6a00; }
+  /* line 13, staticfiles/sass/ui-assets/pages/_page-detail.scss */
+  .gallery-wrap .thumbs-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    cursor: zoom-in; }
+
+/* line 24, staticfiles/sass/ui-assets/pages/_page-detail.scss */
+.item-option-select {
+  margin-bottom: 1rem;
+  display: inline-block;
+  margin-right: 15px; }
+  /* line 26, staticfiles/sass/ui-assets/pages/_page-detail.scss */
+  .item-option-select .btn {
+    min-width: 80px; }
+
+/* line 30, staticfiles/sass/ui-assets/pages/_page-detail.scss */
+.title-description:not(:first-child) {
+  margin-top: 30px; }
+
+/* ================ PAGES HEADER ================== */
+/* ====================== shopping-cart ==================== */
+/* line 4, staticfiles/sass/ui-assets/pages/_page-order.scss */
+.table-shopping-cart.table td, .table-shopping-cart.table th {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+/* line 7, staticfiles/sass/ui-assets/pages/_page-order.scss */
+.table-shopping-cart .price-wrap {
+  line-height: 1.2; }
+
+/* line 8, staticfiles/sass/ui-assets/pages/_page-order.scss */
+.table-shopping-cart .price {
+  font-weight: bold;
+  margin-right: 5px;
+  display: block; }
+
+/* line 3, staticfiles/sass/ui-assets/_rtl-override.scss */
+html[dir='rtl'] .card-banner .img-bg {
+  right: auto;
+  left: 0; }
+
+/* line 8, staticfiles/sass/ui-assets/_rtl-override.scss */
+html[dir='rtl'] .heading-line .title-section {
+  padding-left: 15px; }
+
+/* line 12, staticfiles/sass/ui-assets/_rtl-override.scss */
+html[dir='rtl'] .home-category-banner .img-bg {
+  right: auto;
+  left: -50px; }
+
+/* line 17, staticfiles/sass/ui-assets/_rtl-override.scss */
+html[dir='rtl'] .icon-flag-sm {
+  margin-right: auto;
+  margin-left: 10px; }
+
+/* line 22, staticfiles/sass/ui-assets/_rtl-override.scss */
+html[dir='rtl'] .list-check {
+  padding-right: 0; }
+  /* line 24, staticfiles/sass/ui-assets/_rtl-override.scss */
+  html[dir='rtl'] .list-check > li {
+    padding-right: 24px; }
+    /* line 26, staticfiles/sass/ui-assets/_rtl-override.scss */
+    html[dir='rtl'] .list-check > li:before {
+      right: 0;
+      left: auto; }
+
+/* line 34, staticfiles/sass/ui-assets/_rtl-override.scss */
+html[dir='rtl'] .icontext .icon {
+  margin-right: auto;
+  margin-left: 10px; }
+
+/* line 41, staticfiles/sass/ui-assets/_rtl-override.scss */
+html[dir='rtl'] .itemside .info {
+  padding-right: 15px;
+  padding-left: initial; }

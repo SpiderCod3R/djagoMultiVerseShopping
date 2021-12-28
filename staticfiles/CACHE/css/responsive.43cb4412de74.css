@@ -1,0 +1,159 @@
+/* line 3, staticfiles/sass/responsive.scss */
+.mobile-block {
+  display: none; }
+
+@media (max-width: 1140px) {
+  /* line 12, staticfiles/sass/responsive.scss */
+  .card-deal .col-heading {
+    min-width: 280px;
+    flex-basis: 280px; }
+  /* line 18, staticfiles/sass/responsive.scss */
+  .nav-home-aside {
+    width: 200px; } }
+
+@media (max-width: 992px) {
+  /* small tablet devices */
+  /* line 32, staticfiles/sass/responsive.scss */
+  .table-shopping-cart tr td:first-child {
+    width: 250px; }
+  /* line 34, staticfiles/sass/responsive.scss */
+  .table-shopping-cart .itemside .info {
+    padding: 0; }
+  /* line 35, staticfiles/sass/responsive.scss */
+  .table-shopping-cart .itemside .aside {
+    display: none; }
+  /* line 39, staticfiles/sass/responsive.scss */
+  .card-deal {
+    display: block; }
+    /* line 41, staticfiles/sass/responsive.scss */
+    .card-deal .col-heading {
+      min-width: 280px; }
+  /* line 47, staticfiles/sass/responsive.scss */
+  .slider-home-banner .carousel-item img {
+    max-height: 350px; } }
+
+@media all and (max-width: 768px) {
+  /* line 54, staticfiles/sass/responsive.scss */
+  .nav-home-aside {
+    width: 100%;
+    margin-bottom: 20px; }
+    /* line 56, staticfiles/sass/responsive.scss */
+    .nav-home-aside .title-category {
+      cursor: pointer;
+      padding: 10px 10px;
+      display: block;
+      border: 1px solid #ddd;
+      box-shadow: 0px 2px 3px rgba(102, 102, 102, 0.1);
+      border-radius: 5px; }
+      /* line 62, staticfiles/sass/responsive.scss */
+      .nav-home-aside .title-category .icon {
+        float: right;
+        margin-top: 3px; }
+    /* line 64, staticfiles/sass/responsive.scss */
+    .nav-home-aside .menu-category {
+      margin-bottom: 20px;
+      display: none; }
+      /* line 65, staticfiles/sass/responsive.scss */
+      .nav-home-aside .menu-category li {
+        position: relative;
+        display: block; }
+      /* line 67, staticfiles/sass/responsive.scss */
+      .nav-home-aside .menu-category a {
+        color: #212529; }
+      /* line 68, staticfiles/sass/responsive.scss */
+      .nav-home-aside .menu-category > li > a {
+        display: block;
+        padding: 10px 0px; }
+      /* line 70, staticfiles/sass/responsive.scss */
+      .nav-home-aside .menu-category .submenu {
+        display: none;
+        box-shadow: initial;
+        border: 1px solid #ddd;
+        position: static;
+        left: 0;
+        top: 0;
+        width: auto;
+        background: #fff; }
+      /* line 74, staticfiles/sass/responsive.scss */
+      .nav-home-aside .menu-category li:hover .submenu {
+        display: none; }
+      /* line 78, staticfiles/sass/responsive.scss */
+      .nav-home-aside .menu-category .has-submenu > a:after {
+        transform: rotate(90deg); }
+  /* line 86, staticfiles/sass/responsive.scss */
+  .list-inline-item {
+    margin-bottom: 10px; }
+  /* line 89, staticfiles/sass/responsive.scss */
+  .slider-home-banner .carousel-item img {
+    max-height: 250px; }
+  /* mobile devices */
+  /* line 95, staticfiles/sass/responsive.scss */
+  .section-header .search-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  /* line 96, staticfiles/sass/responsive.scss */
+  .section-header .logo {
+    max-height: 32px;
+    width: auto; }
+  /* line 99, staticfiles/sass/responsive.scss */
+  .banner-quote {
+    min-height: auto; }
+  /* line 103, staticfiles/sass/responsive.scss */
+  .icontext {
+    margin-bottom: 20px; }
+  /* line 107, staticfiles/sass/responsive.scss */
+  .card-post {
+    margin-bottom: 20px; }
+  /* line 111, staticfiles/sass/responsive.scss */
+  .card-product-grid .img-wrap {
+    height: 200px; }
+  /* line 115, staticfiles/sass/responsive.scss */
+  .section-footer .title {
+    margin-bottom: 0;
+    margin-top: 20px; }
+  /* line 120, staticfiles/sass/responsive.scss */
+  .item-feature {
+    margin-bottom: 20px; }
+  /* line 122, staticfiles/sass/responsive.scss */
+  .mobile-order-first {
+    order: -1; }
+  /* line 123, staticfiles/sass/responsive.scss */
+  .mobile-order-1 {
+    order: 1; }
+  /* line 124, staticfiles/sass/responsive.scss */
+  .mobile-order-2 {
+    order: 2; }
+  /* line 125, staticfiles/sass/responsive.scss */
+  .mobile-order-3 {
+    order: 3; }
+  /* line 128, staticfiles/sass/responsive.scss */
+  .mobile-block {
+    display: block; }
+  /* line 131, staticfiles/sass/responsive.scss */
+  .padding-y {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  /* line 132, staticfiles/sass/responsive.scss */
+  .padding-top {
+    padding-top: 20px; }
+  /* line 133, staticfiles/sass/responsive.scss */
+  .padding-bottom {
+    padding-bottom: 20px; }
+  /* line 135, staticfiles/sass/responsive.scss */
+  .padding-y-lg {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  /* line 136, staticfiles/sass/responsive.scss */
+  .padding-top-lg {
+    padding-top: 30px; }
+  /* line 137, staticfiles/sass/responsive.scss */
+  .padding-bottom-lg {
+    padding-bottom: 30px; }
+  /* line 139, staticfiles/sass/responsive.scss */
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important; }
+  /* line 143, staticfiles/sass/responsive.scss */
+  .row > [class^="col"] {
+    padding-left: 5px;
+    padding-right: 5px; } }
