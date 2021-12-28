@@ -29,12 +29,12 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'material',
     'material.admin', # Admin com Materialize
 
     # 'django.contrib.admin', # Admin Padrao do Django
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -42,7 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'shopApp',
+
+    'compressor',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -137,6 +140,15 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_DIRS = [
     'shopApp/static',
 ]
+
+STATICFILES_FINDERS = [
+    'compressor.finders.CompressorFinder',
+]
+
+# USADO PARA COMPILAR ARQUIVOS SCSS OU SASS
+COMPRESS_PRECOMPILERS = (
+    ('text/x-scss', 'django_libsass.SassCompiler'),
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
